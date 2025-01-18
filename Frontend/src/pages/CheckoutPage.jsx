@@ -31,9 +31,17 @@ const CheckoutPage = () => {
     };
 
     return (
-        <div className="checkout-page min-h-screen bg-gray-100 flex justify-center items-center p-6">
-            <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
-                <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">Checkout</h2>
+        <div className="checkout-page min-h-screen bg-cover bg-center flex justify-center items-center p-6"
+            style={{
+                backgroundImage: 'url("https://img.pikbest.com/ai/illus_our/20230426/f97c679e2399889df47384b62a61106e.jpg!w700wp")', // Background image URL
+                backgroundSize: 'cover',
+            }}
+        >
+            <div className="bg-white bg-opacity-70 p-8 rounded-lg shadow-lg w-full max-w-lg"
+                style={{
+                    backdropFilter: 'blur(10px)', // Blur effect behind the transparent box
+                }}
+            >
                 <div className="mb-6">
                     <p className="text-lg text-gray-700 mb-2">
                         <strong>Total Items:</strong> {totalItems}

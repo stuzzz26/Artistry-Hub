@@ -5,57 +5,84 @@ const Home = () => {
         <div
             className="home min-h-screen bg-gray-100 flex items-center justify-center p-6"
             style={{
-                backgroundImage: "url('https://i.pinimg.com/736x/77/76/5b/77765b57263ea32f4d0740940f9f3a8c.jpg')",
+                backgroundImage: "url('https://static.vecteezy.com/system/resources/previews/033/228/003/non_2x/bright-abstract-acrylic-art-painting-background-brush-strokes-stains-creativity-free-photo.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
         >
-            <div className="text-center max-w-3xl bg-white bg-opacity-90 p-8 rounded-lg shadow-2xl transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl">
-                <h1 className="text-4xl font-bold text-gray-800 mb-6 hover:text-blue-600 transition-colors duration-300">
-                    Welcome to Our Artistry Hub!
+            <div className="text-center max-w-full p-8 rounded-lg shadow-2xl">
+                {/* Title Section */}
+                <h1 className="text-6xl font-extrabold text-black mb-6 hover:text-white transition-colors duration-300">
+                    Artistry Hub
                 </h1>
-                <p className="text-lg text-gray-700 mb-4 hover:text-gray-800 transition-colors duration-300">
-                    We are thrilled to present a curated collection of stunning artworks from talented artists around the world. Our Artistry Hub offers a space where art lovers, collectors, and creatives can discover, appreciate, and purchase a wide range of original art pieces.
-                </p>
-                <h2 className="text-2xl font-semibold text-gray-800 mb-3 hover:text-blue-600 transition-colors duration-300">
-                    Explore Unique Artworks
-                </h2>
-                <p className="text-lg text-gray-700 mb-4 hover:text-gray-800 transition-colors duration-300">
-                    Our gallery features an eclectic mix of styles, mediums, and genres, including painting, photography, sculpture, digital art, and more. Whether you're looking for a classic masterpiece, a contemporary piece, or something completely avant-garde, you’ll find it here. Our collection is constantly updated with new works, so there’s always something fresh to discover.
-                </p>
-                <h2 className="text-2xl font-semibold text-gray-800 mb-3 hover:text-blue-600 transition-colors duration-300">
-                    Support Independent Artists
-                </h2>
-                <p className="text-lg text-gray-700 mb-4 hover:text-gray-800 transition-colors duration-300">
-                    By purchasing art from our gallery, you are directly supporting independent artists who pour their passion and creativity into every piece. We believe in empowering artists by providing them with a global platform to showcase their work and connect with a wider audience. Each artwork comes with a story, and we are proud to share those stories with you.
-                </p>
-                <h2 className="text-2xl font-semibold text-gray-800 mb-3 hover:text-blue-600 transition-colors duration-300">
-                    Easy and Secure Shopping Experience
-                </h2>
-                <p className="text-lg text-gray-700 mb-4 hover:text-gray-800 transition-colors duration-300">
-                    Our platform is designed to provide a seamless shopping experience. With just a few clicks, you can browse, save, and purchase your favorite pieces. Our secure checkout process ensures that your transactions are safe, and we offer various payment options for your convenience.
-                </p>
-                <h2 className="text-2xl font-semibold text-gray-800 mb-3 hover:text-blue-600 transition-colors duration-300">
-                    Discover Art That Speaks to You
-                </h2>
-                <p className="text-lg text-gray-700 mb-4 hover:text-gray-800 transition-colors duration-300">
-                    Art has the power to inspire, challenge, and transform. Whether you're decorating your home, office, or simply looking to expand your collection, our gallery offers pieces that reflect a diverse range of expressions and emotions. Find art that resonates with you and adds a personal touch to your space.
-                </p>
-                <h2 className="text-2xl font-semibold text-gray-800 mb-3 hover:text-blue-600 transition-colors duration-300">
-                    Stay Connected and Inspired
-                </h2>
-                <p className="text-lg text-gray-700 mb-4 hover:text-gray-800 transition-colors duration-300">
-                    Join our community of art lovers by subscribing to our newsletter. Stay up to date with new arrivals, exclusive offers, and behind-the-scenes content. Follow us on social media to engage with artists, learn about upcoming exhibitions, and discover new works that will spark your creativity.
-                </p>
-                <h2 className="text-2xl font-semibold text-gray-800 mb-3 hover:text-blue-600 transition-colors duration-300">
-                    Our Mission
-                </h2>
-                <p className="text-lg text-gray-700 mb-6 hover:text-gray-800 transition-colors duration-300">
-                    At our Artistry Hub, we strive to make art accessible to everyone, everywhere. We believe that art should not be confined to galleries and museums but should be enjoyed in everyday spaces. We are passionate about building a global art community that celebrates diversity, creativity, and the power of artistic expression.
-                </p>
-                <p className="text-lg text-gray-700 hover:text-gray-800 transition-colors duration-300">
-                    Thank you for visiting our Artistry Hub. We invite you to explore, support the artists, and find the perfect piece that speaks to your heart. Happy browsing!
-                </p>
+
+                {/* Boxes of Different Paintings History */}
+                <div className="grid grid-cols-4 gap-6 mt-8">
+                    <div className="box bg-red-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-4 hover:text-white transition-colors duration-300">
+                            Paintings
+                        </h3>
+                        <p className="text-gray-700 hover:text-white transition-colors duration-300">
+                            Paintings are one of the most traditional forms of art. They typically involve applying pigments to a surface (usually canvas, wood, or paper) using brushes, palette knives, or other tools.
+                        </p>
+                    </div>
+                    <div className="box bg-blue-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-4 hover:text-white transition-colors duration-300">
+                            Mini Canvas
+                        </h3>
+                        <p className="text-gray-700 hover:text-white transition-colors duration-300">
+                            Mini Canvases are small-scale works of art that allow artists to explore creativity on a smaller, more manageable surface.
+                        </p>
+                    </div>
+                    <div className="box bg-yellow-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-4 hover:text-white transition-colors duration-300">
+                            Sketch
+                        </h3>
+                        <p className="text-gray-700 hover:text-white transition-colors duration-300">
+                            Sketching is a fast and loose drawing technique that captures the basic shapes and outlines of a subject, often without the level of detail found in a finished piece.
+                        </p>
+                    </div>
+                    <div className="box bg-green-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-4 hover:text-white transition-colors duration-300">
+                            Sculptures
+                        </h3>
+                        <p className="text-gray-700 hover:text-white transition-colors duration-300">
+                            Sculptures are three-dimensional works of art created by shaping or carving materials like clay, wood, metal, stone, or modern synthetic materials.
+                        </p>
+                    </div>
+                    <div className="box bg-purple-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-4 hover:text-white transition-colors duration-300">
+                            Custom Art
+                        </h3>
+                        <p className="text-gray-700 hover:text-white transition-colors duration-300">
+                            Custom Art refers to artwork that is specifically created to meet a client's preferences or needs. This type of art can vary widely, from portraits and personalized designs to customized sculptures or murals.
+                        </p>
+                    </div>
+                    <div className="box bg-pink-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-4 hover:text-white transition-colors duration-300">
+                            Mandalas
+                        </h3>
+                        <p className="text-gray-700 hover:text-white transition-colors duration-300">
+                            Mandalas are geometric patterns or designs that have symbolic significance, often representing the universe, spiritual balance, or wholeness. Originating in Hinduism and Buddhism, mandalas are used in meditation and spiritual practices.
+                        </p>
+                    </div>
+                    <div className="box bg-teal-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-4 hover:text-white transition-colors duration-300">
+                            Abstract Art
+                        </h3>
+                        <p className="text-gray-700 hover:text-white transition-colors duration-300">
+                            Abstract Art does not aim to represent reality directly. Instead, it uses shapes, colors, and forms to create compositions that evoke emotions or ideas.
+                        </p>
+                    </div>
+                    <div className="box bg-indigo-300 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-4 hover:text-white transition-colors duration-300">
+                            Religious Art
+                        </h3>
+                        <p className="text-gray-700 hover:text-white transition-colors duration-300">
+                            Religious Art often depicts themes, figures, and stories from religious traditions. It is commonly found in temples, churches, and other places of worship.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     );

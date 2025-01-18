@@ -12,6 +12,9 @@ import UnderMaintenancePage from './pages/UnderMaintenancePage';
 import Navbar from './components/Navbar';
 import { AuthProvider } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
+import Footer from './components/Footer';  // Import the Footer component
+
+
 
 function App() {
     return (
@@ -41,6 +44,7 @@ const NavbarWrapper = () => (
             <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/under-maintenance" element={<UnderMaintenancePage />} />
         </Routes>
+        <Footer /> {/* Add the Footer component at the bottom of all pages */}
     </>
 );
 

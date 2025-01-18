@@ -61,7 +61,15 @@ const Cart = () => {
                     </ul>
 
                     <div className="mt-6">
-                        <div className="flex justify-between items-center mb-4">
+                        <div
+                            className="flex justify-between items-center mb-4 p-6 rounded-lg"
+                            style={{
+                                background: 'rgba(255, 255, 255, 0.7)', // Transparent white background
+                                backdropFilter: 'blur(10px)', // Apply blur effect
+                                backgroundImage: 'url("")', // Background image URL
+                                backgroundSize: 'cover',
+                            }}
+                        >
                             <h3 className="text-xl font-bold text-gray-800">
                                 Total Items: {totalQuantity}
                             </h3>
